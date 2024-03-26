@@ -14,4 +14,17 @@ the only tabs we are going to care about are `code` and `pull requests`. `code` 
 
 ![screenshot of the branch switching](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/3.png)
 
-i haven't made any separate branches at the moment because i'm scribbling this together really fast. but how i'd like this to work is that we each have our own separate working branches
+i haven't made any separate branches at the moment because i'm scribbling this together really fast. but how i'd like this to work is that we each have our own separate working branches so that we can make our edits w/o possibly overwriting each other's code.
+
+## cloning the repository
+
+before i get into explaining how branches work, let me first explain how you're supposed to make a local copy of the repository and a couple things i need you to do locally. i use vscode as my coding environment, so that'll be the process i show and explain here, but i poked around in visual studio the other day to figure out how cloning and committing works there too. as long as the changes get committed to github i don't care what ide or procedure you use.
+
+so, assuming that you have [git installed](https://git-scm.com/downloads), make sure it's configured with your github email and username. you'll get a fatal error for how to configure git if you try to commit and sync your code edits otherwise, but the fatal error comes with instructions for how to fix it anyway. 
+
+![aaa](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/4.png)
+
+in vscode, navigate to the squiggly symbol of version control and click on "clone repository". in vscode, this will result in a dropdown that says "clone from github":
+
+![vscode dropdown "clone from github"](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/5.png)
+
