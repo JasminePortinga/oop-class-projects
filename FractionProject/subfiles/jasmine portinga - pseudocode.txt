@@ -1,0 +1,24 @@
+WANT: addition/subtraction of both simple and complex fractions, depending on the number of param given to a new instance of a Fraction class
+
+Fraction class should have:
+	public:
+		- helper class for handling individual fractional instances because spacing the fractions in the display gets ugly fast 
+			- helper class should have:
+				- a constructor with only two inputs (numerator + denominator)
+				- functions for getting/setting the numerator and denominator 
+				- functions for determining the spacing of numbers and such when printing the display
+		- two possible constructors: one for 4 param (the simple addition) and 8 param (complex addition)
+		- functions for setting all the numerators and denominators. and probably for getting the numerators and denominators too.
+		- function for marking that particular instance as a complex fraction 
+		- functions to help with the display, such as determining whether the fractions are to be added or subtracted 
+		- helper function for simple fractional addition 
+		- function with no params to execute the addition
+		- function with no params to display everything
+
+	private:
+		- integers or doubles for the numerators and denominators
+		- double for the result
+		- Some sort of var to determine whether it's a complex fraction or not 
+			* i think for maximum flexibility (in case this is asked to be edited/expanded in the future), should have both a bool + an int for the number of params, so that if, for example, you created an instance w/6 param, you could choose btwn adding three simple fractions, a complex + a simple fraction, or some other configuration. like that sounds complicated which is why it's not being included in the scope rn but it provides framework for future improvements
+
+main function itself should only have to declare the object instance before instance.display() will show properly
