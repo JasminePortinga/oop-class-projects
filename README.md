@@ -52,6 +52,7 @@ idk how this would be done outside of vscode, though you could probably figure o
 2. choose "create new branch from..." from the drop-down
 3. select "main".
 
-i used my initials to name my branch, but i don't care what you call it. publish it. and please do not stray from it in your ide from this point on.
+i used my initials to name my branch, but i don't care what you call it. publish it. and ***please** do not stray from it in your ide* from this point on.
 
 ![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/10.png)
+
