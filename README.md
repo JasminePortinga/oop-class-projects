@@ -22,9 +22,36 @@ before i get into explaining how branches work, let me first explain how you're 
 
 so, assuming that you have [git installed](https://git-scm.com/downloads), make sure it's configured with your github email and username. you'll get a fatal error for how to configure git if you try to commit and sync your code edits otherwise, but the fatal error comes with instructions for how to fix it anyway. 
 
+![screenshot of the code dropdown on github](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/6.png)
+
+on github, from the green `<code>` dropdown, copy the "clone using web url" link.
+
 ![aaa](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/4.png)
 
-in vscode, navigate to the squiggly symbol of version control and click on "clone repository". in vscode, this will result in a dropdown that says "clone from github":
+then, in vscode, navigate to the squiggly symbol of version control and click on "clone repository". in vscode, this will result in a dropdown that says "clone from github":
 
 ![vscode dropdown "clone from github"](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/5.png)
 
+after you click on it, just paste in the link. it will ask you where you want your repository saved, and remember where you choose to save it, because after you do, i need you to open it up in the file explorer again.
+
+![local file explorer view of the repository. the hidden folder .git and the file .gitignore are boxed in red](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/7.png)
+
+first, make sure you have "hidden items" ticked in the file explorer view tab. then, open `.gitignore` in either an ide or a text editor (it doesn't matter) and then navigate `> .git > info > exclude`:
+
+![//sighs](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/8.png)
+
+open the exclude file in either an ide or regular text editor (it also doesn't matter). copy-paste the contents from `.gitignore` into `exclude`. save `exclude` and close both it and `.gitignore`, since all that does is keep git from tracking and publishing unnecessary files to the github repository.
+
+## creating a branch
+
+idk how this would be done outside of vscode, though you could probably figure out how to do it from github. goodluckhavefun with that. to do it in vscode:
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/9.png)
+
+1. click on the squiggly symbol of version control at the BOTTOM of the ide
+2. choose "create new branch from..." from the drop-down
+3. select "main".
+
+i used my initials to name my branch, but i don't care what you call it. publish it. and please do not stray from it in your ide from this point on.
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/10.png)
