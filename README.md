@@ -66,3 +66,11 @@ in vscode, at the squiggly symbol of version control, you can now see this commi
 
 ![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/12.png)
 
+(this is what the commit page looks like in visual studio, btw:)
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/13.png)
+
+(you open it from under "git" and i'm sure you can figure the rest out from there.)
+
+## merging branches
+
