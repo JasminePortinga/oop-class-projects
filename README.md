@@ -56,3 +56,13 @@ i used my initials to name my branch, but i don't care what you call it. publish
 
 ![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/10.png)
 
+## committing code
+
+committing your code is different from saving the file locally. code commits are for when you make some edits to your code and are satisfied with what it is currently doing, and git makes it such that if you want, you can revert to any older commits. commit often and every time the thought of losing your progress strikes fear into your heart. it also lets you view something called "blame" on github, which i think is called that because if someone breaks a bit of code, you can look at who made what edits last and blame them for it.
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/11.png)
+
+in vscode, at the squiggly symbol of version control, you can now see this commit box. BRIEFLY explain what you did in the commit message box, then hit "commit & sync" from the dropdown:
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/12.png)
+
