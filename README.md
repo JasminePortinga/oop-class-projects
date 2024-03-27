@@ -74,3 +74,20 @@ in vscode, at the squiggly symbol of version control, you can now see this commi
 
 ## merging branches
 
+once you sync your commits to your branch, you will notice something like this back on github.com:
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/14.png)
+
+when the time comes to share code, with one of the other group members, click on "compare and pull request", which will take you to this screen:
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/15.png)
+
+then if you scroll down, you'll see all your commit messages since the last branch merge and all the files changed and how. anyway, notice the part i circled in red. when merging branches, you are taking the commits from the COMPARE branch and giving its edits to the BASE branch. also notice how this is a one-way process. knowing which branch to merge into when can get kind of complicated as a result, so we'll cross that bridge when we get there, so for now, we'll just assume that all our pull requests will be from *our own edit branch* --> *main branch*
+
+you'll also notice if you scroll down that you can see all the commits you made since the last merge, their brief descriptions, as well as what files got changed and how. anyway, then you hit "create pull request".
+
+![](https://github.com/JasminePortinga/oop-class-projects/blob/main/docs/img/16.png)
+
+unless you guys are editing the same lines of the same files at the same time (which you shouldn't be, unless i mess up coordinating the project), there should be no conflicts between the branches, and you can just merge the pull request like that. if there are conflicts, then i will take care of it when the time arises bc that is my job as group leader.
+
+otherwise that should be everything you need to know to get started with github for now.
