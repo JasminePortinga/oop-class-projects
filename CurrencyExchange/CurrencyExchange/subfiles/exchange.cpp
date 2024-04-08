@@ -6,12 +6,9 @@
 #include<locale>
 
 using namespace std;
-
-	class exchange{
-public:
 	
-	void vector <int> vecInit(10) {
-		862.3, 0.00116
+vector <int> vecInit(10) { //vector vecInit with 10 items, initialized to the integers values
+		{862.3, 0.00116
 	},
 	{ 5.06, 0.198 },
 	{ 1.36, 0.74 },
@@ -23,23 +20,22 @@ public:
 	{ 16.48, 0.061 },
 	{ 92.38, 0.011 }
 };
-void vector <string> cntyInit() {
-	for (int country : cntyInit) {
-		cout << item << " ";
-	}
-}
-void outputVector(const vector<int>& items) {
-	for (int item : items) {
-		cout << item << " ";
+vector <string> cntyInit(10) { //vector cntyInit string, with 10 countries 
+	Argentina Peso, Brazilian Real, Canadian Dollar, Chinese Yuan, Euro, Hong Kong Dollar, Indian Rupee,
+		Japanese Yen, Mexican Peso, Russian Ruble
+};
+void outputVector(const vector<int>& vecInit) { //output the countries with the currencies in form of list
+	for (int country : cntyInit) { //for loop for showing the countries 
+		cout << country + 1  << "  ";
+		for (int currency : country) { 
+			cout << currency << "  ";
+		}
+		endl;
 	}
 	cout << endl;
 }
-void inputVector(vector<int>& items) {
-	for (int& item : items) {
-		cin >> item;
-	}
+
 	double convertion
-}
 int main() {
 
 }
