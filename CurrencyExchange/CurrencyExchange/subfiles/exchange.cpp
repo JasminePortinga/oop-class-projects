@@ -24,13 +24,13 @@ vector <string> cntyInit(10) { //vector cntyInit string, with 10 countries
 	Argentina Peso, Brazilian Real, Canadian Dollar, Chinese Yuan, Euro, Hong Kong Dollar, Indian Rupee,
 		Japanese Yen, Mexican Peso, Russian Ruble
 };
-void outputVector(const vector<int>& vecInit) { //output the countries with the currencies in form of list
+void outputVector() { //output the countries with the currencies in form of list
 	for (int country : cntyInit) { //for loop for showing the countries 
 		cout << country + 1  << "  ";
-		for (int currency : country) { 
-			cout << currency << "  ";
+		for (int currency : vecInit) { //output the currency values by side of the countries 
+			cout << currency + 1 << "  ";
 		}
-		endl;
+		endl; //one line for each country with the currency
 	}
 	cout << endl;
 }
