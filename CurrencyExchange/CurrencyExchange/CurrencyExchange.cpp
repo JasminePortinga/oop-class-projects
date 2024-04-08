@@ -17,16 +17,8 @@ void greeting();
 int main()
 {
     greeting();
-}
 
-void greeting() {
-    string stars{"**************************************"};
-    cout << setw(50) << stars << endl;
-    cout << setw(50) << "*\tWelcome to Currency Exchange\t*" << endl;
-    cout << setw(50) << stars << endl;
-}
-
- char ans1{'Y'};
+    char ans1{'Y'};
     int ans2{0};
     
     while (toupper(ans1) == 'Y'){
@@ -69,3 +61,13 @@ void greeting() {
 
     
     return 0;
+
+}
+
+void greeting() {
+    string stars{"**************************************"};
+    cout << setw(50) << stars << endl;
+    cout << setw(50) << "*\tWelcome to Currency Exchange\t*" << endl;
+    cout << setw(50) << stars << endl;
+}
+
