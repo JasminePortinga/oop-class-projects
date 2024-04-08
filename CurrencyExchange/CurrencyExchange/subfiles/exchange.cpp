@@ -1,3 +1,4 @@
+
 //function file
 #include<iostream>
 #include<vector>
@@ -48,3 +49,23 @@ int main() {
 		{ 92.38, 0.011 }
 	};
 }
+  /* commented out in order to prevent conflicts w/thiago's exchange.cpp */
+  /*
+//
+//  exchange.cpp
+//  exchange
+//
+//  Created by Steven Yon on 4/8/24.
+//
+
+#include "exchange.h"
+#include <iostream>
+#include <iomanip>
+
+void title(){
+    std::cout << std::setw(38) << "*****************" << std::endl;
+    std::cout << std::setw(31) << "Welcome to Currency Exchange" << std::endl;
+    std::cout << std::setw(38) << "*****************" << std::endl;
+}
+
+*/
