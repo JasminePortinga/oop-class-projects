@@ -17,6 +17,9 @@ void greeting();
 int main()
 {
     greeting();
+
+    exchange::exchange exch();
+    return 0;
 }
 
 void greeting() {
