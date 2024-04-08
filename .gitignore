@@ -38,3 +38,7 @@
 *.vcxproj.*
 *.sln
 *.vscode
+
+# Other artifacts I don't think we need to be tracking
+*.ilk
+*.pdb

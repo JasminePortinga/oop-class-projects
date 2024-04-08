@@ -1,0 +1,9 @@
+- class called "exchange"
+    - subclass for "country" w/params for country name & a vector w/its exchange rates
+    - function called vecIni() that will init 10 countries 
+    - function to display welcoming msg w/the exchange rates for those first 10 countries
+
+- function main() 
+    - displays the welcoming msg THEN adds 2 more countries (w/their exchange rates) to the exchange vector (which should now have 12 country vectors in it)
+    - outer loop to continue the program y/n 
+        - inside this loop, pick country, input amt to convert, output converted currency
