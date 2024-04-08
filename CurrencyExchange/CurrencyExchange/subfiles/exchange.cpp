@@ -26,5 +26,14 @@ vector <string> cntyInit{ //vector cntyInit string, with 10 countries
 
 int main() {
 	//showing the coutries with the currency database
-	for (int country : cntyInit)
+	for (int country; country <= cntyInit.size(); country++)
+	{
+		country = cntyInit[country + 1];
+		cout << country << "  ";
+		for (int currency; currency <= vecInit.size(); currency++) {
+			currency = vecInit[currency +1];
+			cout << currency << " ";
+		}
+		cout << endl;
+	}
 }
