@@ -5,11 +5,11 @@
 #include<iomanip>
 #include<locale>
 
+
 using namespace std;
-	
-vector <int> vecInit(10) { //vector vecInit with 10 items, initialized to the integers values
-		{862.3, 0.00116
-	},
+void vecInit(std::vector<vector<double>>& vec) { //vector vecInit with 10 items, initialized to the integers values
+	vec =
+	{ 862.3, 0.00116 },
 	{ 5.06, 0.198 },
 	{ 1.36, 0.74 },
 	{ 7.23, 0.14 },
@@ -21,12 +21,12 @@ vector <int> vecInit(10) { //vector vecInit with 10 items, initialized to the in
 	{ 92.38, 0.011 }
 };
 vector <string> cntyInit(10) { //vector cntyInit string, with 10 countries 
-	Argentina Peso, Brazilian Real, Canadian Dollar, Chinese Yuan, Euro, Hong Kong Dollar, Indian Rupee,
-		Japanese Yen, Mexican Peso, Russian Ruble
+	Argentina Peso Brazilian Real, Canadian Dollar, Chinese Yuan, Euro, Hong Kong Dollar, Indian Rupee,
+		Japanese Yen, Mexican Peso, Russian Ruble;
 };
 void outputVector() { //output the countries with the currencies in form of list
 	for (int country : cntyInit) { //for loop for showing the countries 
-		cout << country + 1  << "  ";
+		cout << country + 1 << "  ";
 		for (int currency : vecInit) { //output the currency values by side of the countries 
 			cout << currency + 1 << "  ";
 		}
@@ -35,7 +35,6 @@ void outputVector() { //output the countries with the currencies in form of list
 	cout << endl;
 }
 
-	double convertion
 int main() {
-
+	output vector();
 }
