@@ -1,0 +1,5 @@
+- thiago made the country and conversion rate vectors
+- steven got the title and for loops working
+- jasmine got the display w/the columns working
+
+- these are all in the same file because we're still having difficulty figuring out how to properly share code and coordinate edits, and so they were consolidated to one file for submission

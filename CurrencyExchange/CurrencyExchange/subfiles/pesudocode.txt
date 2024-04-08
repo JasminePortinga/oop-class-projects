@@ -7,3 +7,20 @@
     - displays the welcoming msg THEN adds 2 more countries (w/their exchange rates) to the exchange vector (which should now have 12 country vectors in it)
     - outer loop to continue the program y/n 
         - inside this loop, pick country, input amt to convert, output converted currency
+
+
+PROF PSEUDOCODE EX:
+
+Loop:
+    - exchange_list()
+    - country_list()
+    - foreign_convert()
+    - country_convert()
+    
+- constructor w/the countries- 
+- function to push el to vector
+- private should have two vectors: exchange (w/doubles) and countries (w/strings)
+
+- then in main, call out the objects from the files, initialize
+- main should follow the flow of the creation
+- write the main f'n first so that everyone understands how the flow is supposed to look and construct the functions around it
