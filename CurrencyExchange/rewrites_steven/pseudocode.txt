@@ -1,0 +1,4 @@
+- summon an instance of the Exchange class
+- use f'n to show title
+- while loop to display the window for the two different directions of currency exchange 
+- minor function to ask user to continue, as it's only relevant to the main function rather than the class
