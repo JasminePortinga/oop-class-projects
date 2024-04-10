@@ -1,4 +1,4 @@
-//
+//Currency Exchange Project
 //  main.cpp
 //  exchange
 //
@@ -6,32 +6,57 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <string>
+#include <iomanip>
 #include "exchange.h"
+
+using namespace std;
 
 
 int main() {
-   exchange title;
-    
-    
+    Exchange exchange;
+    exchange.title();
+  
     char ans1{'Y'};
     int ans2{0};
     
-    do{
-    std::cout << "Enter y/Y to continue, else enter anything: ";
-    std::cin >> ans1;
-    std::cout << std::endl;
-    std::cout << "Enter 1 to convert from US dollar to other currency. 2 to convert from other currency to US dollar: ";
-    std::cin >> ans2;
+    while (toupper(ans1) == 'Y'){
+    cout << "Enter 1 to convert from US dollar to other currency. 2 to convert from other currency to US dollar: ";
+    cin >> ans2;
+    cout << endl;
     
+        double amount{0};
+        
         if (ans2==1){
+            cout << "Enter the amount in US Dollars: ";
+            cin >> amount;
+            cout << endl << setw(27) << "$1" << setw(9) << "$" << amount << endl ;
+            exchange.convertFromUSD(amount);
+            cout << endl << endl;
             
         }
         
-        else{
-            
+        else if (ans2==2){
+            unsigned int j;
+            exchange.countriesList();
+            cout << endl << "First choose a country: ";
+            cin >> j;
+            cout << endl;
+            cout << "Enter the amount in foreign currency: ";
+            cin >> amount;
+            cout << endl;
+            exchange.convertToUSD(amount,j);
         }
+        
+        else {
+            cout << "Invalid input" << endl << endl;
+        }
+        
+        exchange.addCurrencies();
+        
+        std::cout << "Enter y/Y to continue, else enter anything: ";
+        std::cin >> ans1;
     }
-    while (toupper(ans1) == 'Y');
-    
     return 0;
 }
