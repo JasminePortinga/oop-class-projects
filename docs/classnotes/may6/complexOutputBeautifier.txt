@@ -1,0 +1,15 @@
+// jasmine portinga, steven yon, thiago santiago
+
+ostream &operator<<(ostream &osObject, const Complex &complex)
+{
+    //    osObject << "(";                    //Step a
+    osObject << complex.real; // Step b
+    if (!(complex.imaginary == 0)) { //if the imaginary component is not 0
+        osObject << ((complex.imaginary < 0) ? " - " : " + ");
+        if ((abs(complex.imaginary) != 1.0)) { //if it's not just +/- 1
+            osObject << abs(complex.imaginary);
+        }
+        osObject << "i";
+    }
+    return osObject; // return the ostream object
+}

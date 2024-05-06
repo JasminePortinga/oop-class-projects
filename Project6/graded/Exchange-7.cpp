@@ -5,7 +5,7 @@
 #include <string>  // Enables string modification
 #include <vector>
 // #include <fstream> //jasmine is tired of always having to print things to the terminal and wants a log.txt
-#include "Exchange.h"
+#include "Exchange-5.h"
 using namespace std;
 
 Exchange::Exchange() {}
@@ -88,14 +88,15 @@ void Exchange::addCurr(vector<vector<float>> vec) {
 
 
 //void Exchange::cntyInit(parameter is a vector of type string.) {
-    void Exchange::cntyInit(std::vector<std::string>& cnty) {
+//    void Exchange::cntyInit(std::vector<std::string>& cnty) {
+void Exchange::cntyInit(std::vector<std::string> cnty) {
     countries = cnty;
 //Initialize the PRIVATE vector countries<> using the providing vector parameter.
 
 }
+
 void Exchange::cntyInit(std::vector<std::string>* cnty) {
     // Initialize countries using the pointer vec
-    // oh apparently we could've just done countries = *cnty lol 
     for (auto count : *cnty) {
         countries.push_back(count);
     }
@@ -159,10 +160,10 @@ void Exchange::Foreign_US(double amt) {
     cout << endl;
     //Display(choice);
     //showCur(amt);
-	cout << setw(35) << string("From US$ to " + countries[choice - 1]+": ") << setw(15);
+	cout << setw(35) << string("From US$ to " + string(countries[choice - 1])) << setw(15);
 	cout << "$1" << setw(15) << round(100*(exch[choice - 1][0]))/100 << endl;
 
-	cout << setw(35) << string("From " + countries[choice - 1] + " to US$: ") << setw(15);
+	cout << setw(35) << string("From " + countries[choice - 1] + " to US$ ") << setw(15);
 	cout << amt << setw(15) << round(100*(amt / exch[choice - 1][0]))/100 << endl << endl;
 }
 
