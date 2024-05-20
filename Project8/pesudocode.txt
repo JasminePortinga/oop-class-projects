@@ -1,0 +1,7 @@
+// notes to self: fed tax = 15%; state tax = 5%;
+
+
+// so obviously have to invoke at least 2 instances of the tax_system object, and then set each one's state using the getStateTax() f'n 
+// then we set the number of dependents (invoking function from the parent class), and then output the information 
+
+// operator overload not working

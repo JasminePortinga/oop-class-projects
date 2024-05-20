@@ -1,0 +1,73 @@
+Project 6: (in class)
+
+   Create a class called Tax_System (Federal level) with these specifications:
+     - a constructor with these parameters: first name, last name, tax id and income.
+     - a default destructor.
+ 	  - a friend function called printDependent() to return the number of dependent.
+	  - all set() and get() functions for all private members.
+ 	  - a virtual toString() function to output the followings:
+
+			Tax payer information: Marie Kolosovich
+	      		tax Id: 999-99-9998
+   		   	Number of dependent: 3
+			Income: 12500
+      		  	Fed. Tax: 1875.000000
+
+	  - a virtual stateTx() function to return a state tax (in decimal). Set
+     an appropriate value for the derived to override. 
+
+	  - an overloaded += operator to add an income to an existing income.
+
+   a list of private members:
+      		firstName;
+		lastName;
+		taxId;       //tax payer id.
+		income;      //total income 
+		netIncome;   //net income after deduction
+		fedTax;      //federal income tax
+		stateTax;    //state income tax
+		dependent;   //Number of dependent inthe family.
+
+//////////////////////////////////////////////////
+class Tax_System_State : public Tax_System{
+   public:
+		Tax_System_State(const std::string&, const std::string&, const std::string &, const std::string&, double inc);
+		virtual ~Tax_System_State() = default; // compiler generates virtual destructor
+
+		void setStateTax();
+		double getStateTax() const;
+
+		Tax_System_State operator+=(double);   //addition
+
+		virtual double stateTx(std::string) override;  //virtual
+		virtual std::string toString() const override; // virtual              
+	private:
+		std::string stateTaxId{"999-99-9999"};
+		double stateTax{ 0 };
+};
+
+========================================================
+   	Test your class in main.cpp. Use these data to test your class:
+
+	Tax_System tax1{"John", "Doe", "999-99-9999", 72000};
+	Tax_System tax2{ "Marie", "Kolosovich", "999-99-9998", 12500 };
+//	Tax_System_State statTax1("Jim", "Chen", "999-99-9997", "123456789", 52350.25);
+
+      - set the state for tax1 to be "NY".
+      - set the number of dependent of tax1 to be 1.	
+    Output the result using the toString function of the base class.
+  
+      - set the state for tax2 to be "CA"
+      - set the number of dependent of tax2 to be 3.
+    Output the result using the toString function of the base class.
+
+//      - set the number of dependent of statTax1 to be 5.
+//      - set the state for statTax1 to be "CA"
+
+	   - Create a pointer for the class Tax_System with statTax1 as parameter. 
+Output the toString() function from the derived class to show that virtual
+function is object based not handle based.
+
+	    - Add 28000 to object tax1 using the += operator, then output the result using 
+the toString() function in the base class.
+

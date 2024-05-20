@@ -29,7 +29,7 @@
 		// you don't say "virtual" in the 3d geo version
 	// if you don't overwrite your functions, then the compiler isn't gonna know which version of the function to use. this is bad, bc it defaults to the virtual function
 		// if you just keep writing similar functions for things, then you increase the cost of things, and it'll take time to fetch things
-// pure virtual functionos = 0;
+// pure virtual functions = 0;
 	// if you don't do that, then you're not making an abstract class. it defeats the purpose
 // in real life, you'll have like 10, 15 levels deep of subsclasses. but we are starting small
 
